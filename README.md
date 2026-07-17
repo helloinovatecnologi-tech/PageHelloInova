@@ -1,32 +1,65 @@
-# Landing Page HelloInova
+# HelloInova - Landing Page
 
-Landing page institucional e de captação de leads desenvolvida em HTML, CSS e JavaScript puro.
+Landing page institucional da **HelloInova**, desenvolvida para apresentar a empresa, divulgar seus serviços e captar novos clientes.
 
-## Arquivos
+O projeto foi construído utilizando apenas tecnologias web nativas, priorizando desempenho, responsividade e facilidade de hospedagem.
 
-- `index.html`: estrutura da página.
-- `style.css`: estilos, responsividade e animações.
-- `script.js`: menu mobile, formulário, máscara de telefone, WhatsApp e integração com endpoint.
+---
 
-## Configurações obrigatórias
+## 🚀 Tecnologias
 
-### 1. WhatsApp
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
 
-Abra o arquivo `script.js` e altere:
+---
 
-```js
+## ✨ Funcionalidades
+
+- Landing page totalmente responsiva
+- Menu mobile
+- Formulário de contato
+- Máscara automática para telefone
+- Integração com WhatsApp
+- Envio de leads para API (opcional)
+- Animações e efeitos visuais
+- Código leve e de fácil manutenção
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+.
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+---
+
+## ⚙️ Configuração
+
+### WhatsApp
+
+No arquivo `script.js`, localize a configuração:
+
+```javascript
 whatsappNumber: "5500000000000"
 ```
 
-Use o código do país, DDD e número, somente com números.
+Substitua pelo número oficial da empresa utilizando apenas números, incluindo código do país e DDD.
 
-Exemplo:
+**Exemplo:**
 
-```js
+```javascript
 whatsappNumber: "5511999999999"
 ```
 
-### 2. E-mail
+---
+
+### E-mail
 
 No arquivo `index.html`, procure por:
 
@@ -34,23 +67,37 @@ No arquivo `index.html`, procure por:
 contato@helloinova.com.br
 ```
 
-Substitua pelo e-mail oficial da empresa.
+Substitua pelo endereço de e-mail oficial da empresa.
 
-### 3. Instagram
+---
 
-No rodapé do `index.html`, substitua o `href="#"` do Instagram pelo endereço completo do perfil.
+### Instagram
 
-## Captação de leads
+No rodapé do arquivo `index.html`, altere o link do Instagram:
 
-Por padrão, após o preenchimento do formulário, o site abre uma conversa no WhatsApp com os dados do lead.
+```html
+href="#"
+```
 
-Para enviar os leads diretamente para um serviço externo ou backend, informe a URL no arquivo `script.js`:
+Para:
 
-```js
+```html
+href="https://instagram.com/seu_perfil"
+```
+
+---
+
+## 📩 Captação de Leads
+
+Por padrão, após o envio do formulário, o visitante é redirecionado para uma conversa no WhatsApp contendo todas as informações preenchidas.
+
+Caso deseje integrar o formulário a um backend ou serviço externo, configure o endpoint no arquivo `script.js`:
+
+```javascript
 leadEndpoint: "https://seu-endpoint.com/leads"
 ```
 
-O formulário enviará um JSON no seguinte formato:
+Os dados serão enviados em formato JSON:
 
 ```json
 {
@@ -58,25 +105,83 @@ O formulário enviará um JSON no seguinte formato:
   "company": "Empresa",
   "email": "email@empresa.com",
   "phone": "(00) 00000-0000",
-  "projectType": "Sistema personalizado",
-  "message": "Descrição",
+  "projectType": "Sistema Personalizado",
+  "message": "Descrição do projeto",
   "createdAt": "2026-07-15T00:00:00.000Z"
 }
 ```
 
-## Como visualizar
+---
 
-Abra o arquivo `index.html` no navegador.
+## ▶️ Como Executar
 
-Também é possível usar a extensão Live Server no VS Code.
+### 1. Clone este repositório
 
-## Publicação gratuita
+```bash
+git clone https://github.com/helloinovatecnologi-tech/PageHelloInova.git
+```
 
-A página pode ser publicada gratuitamente em:
+### 2. Acesse a pasta do projeto
+
+```bash
+cd PageHelloInova
+```
+
+### 3. Abra o projeto
+
+Você pode abrir o arquivo `index.html` diretamente no navegador ou utilizar a extensão **Live Server** do Visual Studio Code para uma melhor experiência durante o desenvolvimento.
+
+---
+
+## 🌐 Hospedagem
+
+Por se tratar de um projeto estático, ele pode ser publicado gratuitamente em diversas plataformas, como:
 
 - GitHub Pages
-- Cloudflare Pages
 - Netlify
+- Cloudflare Pages
 - Vercel
 
-Como é um site estático, não exige servidor para funcionar quando o formulário estiver configurado para WhatsApp ou serviço externo.
+Não é necessário um servidor backend quando o formulário estiver configurado apenas para o WhatsApp ou para uma API externa.
+
+---
+
+## 📌 Sobre a HelloInova
+
+A **HelloInova** é uma empresa especializada no desenvolvimento de soluções digitais sob medida para empresas.
+
+### Nossos serviços
+
+- 💻 Desenvolvimento de Sistemas Personalizados
+- 🤖 Automações com Inteligência Artificial
+- 🔗 Integrações entre Sistemas
+- 📊 Dashboards e Business Intelligence
+- 🌐 Desenvolvimento de Sites Institucionais
+- 🚀 Landing Pages
+- ☁️ Soluções em Nuvem
+- 🛠️ Consultoria em Tecnologia
+
+Nosso propósito é transformar ideias em soluções tecnológicas que aumentem a eficiência, reduzam custos e impulsionem resultados.
+
+> **HelloInova**  
+> *Da mente às telas.*
+
+---
+
+## 📄 Licença
+
+Este projeto é disponibilizado para fins institucionais da HelloInova.
+
+Caso deseje utilizá-lo como base para outros projetos, recomenda-se realizar as adaptações necessárias conforme sua aplicação.
+
+---
+
+## 👨‍💻 Desenvolvido por
+
+**HelloInova**
+
+🌐 Site: https://helloinova.com.br
+
+📧 helloinovatecnologi@helloinova.com.br
+
+📱 Instagram: https://www.instagram.com/helloinova?igsh=YXI0bmc2dnN2amR0
